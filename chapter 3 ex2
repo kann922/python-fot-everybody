@@ -1,0 +1,16 @@
+# Exercise 1: Rewrite your pay computation to give the employee 1.5 times the hourly rate for hours worked above 40 hours.
+# Enter Hours: 45
+# Enter Rate: 10
+# Pay: 475.0
+
+a = input('enter hours ')
+b = input ('enter rate ')
+
+
+A = float(a)
+B = float(b)
+if A > 40 :
+    pay = (A-40) * 1.5 * B + 40 * B
+elif A <= 40 :
+    pay = A * B
+print (pay)
