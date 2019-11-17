@@ -1,0 +1,18 @@
+#Exercise 2: Rewrite your pay program using try and except
+#so that your program handles non-numeric input gracefully by printing a message and exiting the program. The following shows two executions of the progra
+
+a = input('enter hours ')
+b = input ('enter rate ')
+try :
+     A = float(a)
+except :
+    print('not a number ')
+try :
+    B = float (b)
+except:
+    print('not a number')
+if A > 40 :
+    pay = (A-40) * 1.5 * B + 40 * B
+elif A <= 40 :
+    pay = A * B
+print (pay)
